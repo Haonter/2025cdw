@@ -1,0 +1,139 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f9, #e0e0e5);
+    color: #333;
+    
+    p {
+        text-align: left;
+    }
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #333, #555);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            padding: 0;
+
+            li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+
+            li a:hover {
+                color: #f0a500;
+            }
+        }
+    }
+}
+
+/* Secciones */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#about {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        font-weight: 600;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.project {
+    background: linear-gradient(135deg, #fff, #f9f9f9);
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Ajustar tamaño de las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-img {
+    max-width: 450px;
+    border-radius: 5px;
+}
+
+#avatar {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 2px solid black;
+    width: 300px;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #333, #444);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}

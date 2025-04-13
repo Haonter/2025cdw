@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio One Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styes.css">
+    </head>
+    <body>
+        <header>
+            <h1>Diego Rodriguez</h1>
+            <p>Desarrollador Web</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>Sobre mí</h2>
+                <img id="avatar" src="https://diegorodriguez.dev/src/img/diego.webp" alt="Avatar de Diego" style="border-radius: 50%;">
+                <p>Hola, soy Diego, un desarrollador web apasionado por crear soluciones innovadoras y funcionales.</p>
+            </section>
+            <section id="projects">
+                <h2>Proyectos</h2>
+                <div class="grid-container">
+                    <div class="project">
+                        <img class="project-img" src="https://diegorodriguez.dev/src/img/Senior-care.webp" alt="Proyecto Senior Care">
+                        <h3>Senior Care</h3>
+                        <p>Una aplicación web para gestionar tareas con una interfaz intuitiva y moderna.</p>
+                    </div>
+                    <div class="project">
+                        <img class="project-img" src="https://diegorodriguez.dev/src/img/Lexpin_1.webp" alt="Proyecto Lexpin">
+                        <h3>Lexpin</h3>
+                        <p>Un sitio de comercio electrónico con carrito de compras y pasarela de pagos integrada.</p>
+                    </div>
+                    <div class="project">
+                        <img class="project-img" src="https://diegorodriguez.dev/src/img/One-Piece-API.webp" alt="Proyecto One Piece API">
+                        <h3>One Piece API</h3>
+                        <p>Un blog personal con sistema de comentarios y panel de administración.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contacto</h2>
+                <form>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Diego Rodriguez. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
